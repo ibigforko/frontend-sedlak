@@ -1,0 +1,297 @@
+body nav {
+  background-color: white;
+  border-top-width: 4px;
+  border-top-color: #084dbd;
+  border-top-style: solid;
+  position: sticky;
+  top: -1px;
+  opacity: 0.98;
+}
+body nav div {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+@media (min-width: 640px) {
+  body nav div {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+@media (min-width: 1024px) {
+  body nav div {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+body nav div div {
+  display: flex;
+  height: 4rem;
+  justify-content: center;
+}
+body nav div div div {
+  display: none;
+}
+@media (min-width: 768px) {
+  body nav div div div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    display: flex;
+  }
+}
+body nav div div div a {
+  color: black;
+  border-radius: 0.375rem;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.items-container {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4rem;
+  max-width: 42rem;
+}
+@media (min-width: 640px) {
+  .items-container {
+    margin-top: 5rem;
+  }
+}
+@media (min-width: 1024px) {
+  .items-container {
+    margin-top: 6rem;
+    max-width: none;
+  }
+}
+.items-container .items-grid {
+  display: grid;
+  max-width: 36rem;
+  grid-template-columns: repeat(1, 1fr);
+  column-gap: 2rem;
+  row-gap: 4rem;
+}
+@media (min-width: 1024px) {
+  .items-container .items-grid {
+    max-width: none;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.items-container .items-grid .item.first-service {
+  border-color: #FF702A;
+}
+.items-container .items-grid .item dt .first {
+  color: #FF702A;
+}
+.items-container .items-grid .item dd .item-footer a.first {
+  color: #FF702A;
+}
+.items-container .items-grid .item.second-service {
+  border-color: #194a93;
+}
+.items-container .items-grid .item dt .second {
+  color: #194a93;
+}
+.items-container .items-grid .item dd .item-footer a.second {
+  color: #194a93;
+}
+.items-container .items-grid .item.third-service {
+  border-color: #194a93;
+}
+.items-container .items-grid .item dt .third {
+  color: #194a93;
+}
+.items-container .items-grid .item dd .item-footer a.third {
+  color: #194a93;
+}
+.items-container .items-grid .item {
+  display: flex;
+  flex-direction: column;
+  border-bottom-width: 4px;
+  border-style: solid;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+.items-container .items-grid .item dt {
+  display: flex;
+  align-items: center;
+  column-gap: 0.75rem;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.75rem;
+  color: #1f2937;
+}
+.items-container .items-grid .item dt svg {
+  width: 2rem;
+  height: 2rem;
+}
+.items-container .items-grid .item dd {
+  margin: 0;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  font-size: 1rem;
+  line-height: 1.75rem;
+  color: #4b5563;
+}
+.items-container .items-grid .item dd .tem-description {
+  flex: 1 1 auto;
+}
+.items-container .items-grid .item dd .item-footer {
+  display: flex;
+  justify-content: end;
+  margin: 0 0 1rem 0;
+}
+.items-container .items-grid .item dd .item-footer a {
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+}
+
+.articles-container {
+  margin-top: 4rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1280px;
+}
+.articles-container .articles-header {
+  display: block;
+  margin: 10px 0 25px 0;
+  border-bottom: 1px solid #e4e9f0;
+}
+.articles-container .articles-header h2 {
+  margin-bottom: 0;
+  padding-bottom: 0.25rem;
+  border-bottom: 2px solid rgb(255, 121, 0);
+  display: inline-block;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+.articles-container .articles-grid {
+  display: grid;
+  gap: 3rem;
+}
+@media (min-width: 640px) {
+  .articles-container .articles-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .articles-container .articles-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.articles-container .articles-grid article {
+  display: flex;
+  flex-direction: column;
+}
+.articles-container .articles-grid article h2 {
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  line-height: 1.1;
+}
+.articles-container .articles-grid article img {
+  margin-bottom: 1.25rem;
+  border-radius: 0.5rem;
+  max-width: 13rem;
+}
+.articles-container .articles-grid article div {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+}
+.articles-container .articles-grid article div div {
+  padding: 0 1.25rem 0 1.25rem;
+}
+.articles-container .articles-grid article div p {
+  margin-bottom: 1rem;
+  max-width: 24rem;
+}
+.articles-container .articles-grid article div a {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-weight: 500;
+  color: #FF702A;
+}
+.articles-container .articles-grid article div a:hover {
+  text-decoration: none;
+}
+
+.footer {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-bottom: 2rem;
+  padding-top: 5rem;
+}
+@media (min-width: 640px) {
+  .footer {
+    padding-top: 6rem;
+  }
+}
+@media (min-width: 1024px) {
+  .footer {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 8rem;
+  }
+}
+.footer .footer-grid {
+  border-bottom-width: 2.5rem;
+  border-bottom-color: #FF702A;
+  border-bottom-style: solid;
+}
+@media (min-width: 1280px) {
+  .footer .footer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+}
+.footer .footer-grid .links {
+  padding-bottom: 2rem;
+  margin-top: 2.5rem;
+}
+@media (min-width: 1280px) {
+  .footer .footer-grid .links {
+    margin-top: 0;
+  }
+}
+.footer .footer-grid .links .link {
+  font-size: 1.15rem;
+  border-bottom: 1px dotted #2c2c2c;
+  padding-top: 1.25rem;
+}
+.footer .footer-grid .links .link:last-child {
+  border: none;
+}
+
+body {
+  margin: 0;
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+body .container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+@media (min-width: 1024px) {
+  body .container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
